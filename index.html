@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Offer Boxes</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container" style="margin-top: 210px;">
+    <div class="header-container">
+      <h2 class="header-title">YAY! It's BOGO</h2>
+    </div>    
+
+    <!-- Box 1 -->
+    <div class="offer-box" onclick="toggleDropdown(this, 'dropdown1')">
+      <div class="offer-details">
+        <span>
+          <input type="radio" name="offer"> 
+          <strong>1 Unit</strong> 
+          <span class="discount">10% Off</span>
+        </span>
+        <span class="price">
+          $10.00 USD 
+          <del>$12.00 USD</del>
+        </span>
+      </div>
+      <div id="dropdown1" class="dropdowns">
+        <div class="dropdown-row">
+          <label>#1</label>
+          <select>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <label></label>
+          <select>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+          </select>
+        </div>
+        <div class="dropdown-row">
+          <label>#2</label>
+          <select>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <label></label>
+          <select>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 2 (Most Popular) -->
+    <div class="offer-box" onclick="toggleDropdown(this, 'dropdown2')">
+      <div class="most-popular-tag">MOST POPULAR</div>
+      <div class="offer-details">
+        <span>
+          <input type="radio" name="offer"> 
+          <strong>2 Units</strong> 
+          <span class="discount">20% Off</span>
+        </span>
+        <span class="price">
+          $18.00 USD 
+          <del>$24.00 USD</del>
+        </span>
+      </div>
+      <div id="dropdown2" class="dropdowns">
+        <div class="dropdown-row">
+          <label>#1</label>
+          <select>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <label></label>
+          <select>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+          </select>
+        </div>
+        <div class="dropdown-row">
+          <label>#2</label>
+          <select>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <label></label>
+          <select>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="offer-box" onclick="toggleDropdown(this, 'dropdown3')">
+      <div class="offer-details">
+        <span>
+          <input type="radio" name="offer"> 
+          <strong>3 Units</strong> 
+          <span class="discount">30% Off</span>
+        </span>
+        <span class="price">
+          $25.00 USD 
+          <del>$36.00 USD</del>
+        </span>
+      </div>
+      <div id="dropdown3" class="dropdowns">
+        <div class="dropdown-row">
+          <label>#1</label>
+          <select>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <label></label>
+          <select>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+          </select>
+        </div>
+        <div class="dropdown-row">
+          <label>#2</label>
+          <select>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <label></label>
+          <select>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-between;">
+      <div class="free-delivery">Free Delivery</div>
+      <div class="total">Total : $18.00 USD</div>
+    </div>
+
+    <button class="add-to-cart">+ Add to Cart</button>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
